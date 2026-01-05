@@ -1,0 +1,138 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Code Review";
+}
+
+<style>
+    #chat-window {
+        background-color: #ffffff;
+        padding: 20px;
+    }
+
+    /* Base style for all message containers */
+    .message-container {
+        background-color: #f8f9fa; /* Very light grey */
+        transition: background-color 0.2s ease;
+    }
+
+    /* Highlight style for 'Me' */
+    .me-style {
+        background-color: #f0f7ff; /* Extremely light blue tint */
+    }
+
+    /* Style the scrollbar to be minimalist */
+    #chat-window::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    #chat-window::-webkit-scrollbar-thumb {
+        background-color: #e0e0e0;
+        border-radius: 4px;
+    }
+
+    /* Ensure text doesn't look like a code block unless it's meant to be */
+    .message-content {
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 0.95rem;
+    }
+</style>
+
+<div class="container mt-4" style="max-width: 900px;">
+    <div class="card border-0 shadow-sm">
+        <div class="card-header bg-white py-3">
+            <h5 class="mb-0 fw-bold text-primary">Review Discussion</h5>
+        </div>
+
+        <div id="chat-window" class="card-body overflow-auto" style="height: 500px; position: relative; background-color: #fff;">
+            <partial name="_ChatMessages" model="Model.InitialMessages" />
+        </div>
+
+        <div class="card-footer bg-white border-top-0 p-3">
+            <div class="input-group">
+                <textarea id="messageInput" class="form-control border-0 bg-light"
+                          placeholder="Type your feedback..." rows="1"
+                          style="resize: none;"></textarea>
+                <button id="sendBtn" class="btn btn-primary px-4 ms-2">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+
+
+
+              async function loadMessages() {
+            try {
+                const response = await fetch('/?handler=Messages');
+                const html = await response.text();
+                const chatWindow = document.getElementById('chat-window');
+
+                // 1. Check if the user is at the bottom BEFORE updating content
+                const threshold = 100; // leeway in pixels
+                const wasAtBottom = (chatWindow.scrollHeight - chatWindow.scrollTop - chatWindow.clientHeight) < threshold;
+
+                // 2. Update the content
+                chatWindow.innerHTML = html;
+
+                // 3. Use a tiny timeout to let the browser render the new elements
+                // before calculating the scroll position
+                setTimeout(() => {
+                    if (wasAtBottom) {
+                        chatWindow.scrollTo({
+                            top: chatWindow.scrollHeight,
+                            behavior: 'smooth' // Provides that modern sliding feel
+                        });
+                    }
+                }, 50); // 50ms is usually enough for a DOM paint
+
+            } catch (err) {
+                console.error("Failed to load messages", err);
+            }
+        }
+
+        async function sendMessage() {
+            const text = document.getElementById('messageInput').value;
+            if (!text) return;
+
+            // Securely post data (CSRF token handled by Razor Pages automatically in forms,
+            // but for Fetch we need to be careful. For simplicity, we use form submission logic or header).
+            // Here we keep it simple:
+
+            const formData = new FormData();
+            formData.append('content', text);
+
+            // Add Anti-Forgery Token
+            formData.append('__RequestVerificationToken', document.querySelector('input[name="__RequestVerificationToken"]').value);
+
+            await fetch('/?handler=PostMessage', {
+                method: 'POST',
+                body: formData
+            });
+
+            document.getElementById('messageInput').value = '';
+            loadMessages();
+        }
+
+       // Allow Enter to submit a comment
+       document.getElementById('messageInput').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault(); // Prevent new line
+                document.getElementById('sendBtn').click(); // Trigger send
+            }
+        });
+
+
+        // Bind buttons
+        document.getElementById('sendBtn')?.addEventListener('click', sendMessage);
+        document.getElementById('refreshBtn')?.addEventListener('click', loadMessages);
+
+        // Auto-refresh every 10 seconds (Replacing the asp:Timer)
+        setInterval(loadMessages, 10000);
+
+        // Initial load
+        loadMessages();
+    </script>
+}

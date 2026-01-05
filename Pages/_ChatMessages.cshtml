@@ -1,0 +1,33 @@
+﻿@model IEnumerable<CodeReviewModern.Models.ReviewComment>
+@using Microsoft.AspNetCore.Identity
+@using CodeReviewModern.Models
+@inject UserManager<ApplicationUser> UserManager
+
+@{
+    var currentUser = await UserManager.GetUserAsync(User);
+    var currentHandle = currentUser?.Handle;
+}
+
+@foreach (var msg in Model)
+{
+    var isMe = msg.UserName == currentHandle;
+
+    <div class="message-row mb-3 d-flex align-items-start">
+        <div class="message-container p-3 @(isMe ? "me-style" : "others-style")"
+             style="max-width: 85%; border-radius: 8px; border-left: 4px solid @(isMe ? "#007bff" : "#dee2e6");">
+
+            <div class="d-flex justify-content-between align-items-center mb-1">
+                <span class="fw-bold small @(isMe ? "text-primary" : "text-dark")">
+                    @msg.UserName @(isMe ? "(You)" : "")
+                </span>
+                <span class="text-muted" style="font-size: 0.75rem;">
+                    @msg.CreatedAt.ToString("MMM dd, HH:mm")
+                </span>
+            </div>
+
+            <div class="message-content" style="white-space: pre-wrap; word-wrap: break-word; color: #333;">
+                @msg.Content
+            </div>
+        </div>
+    </div>
+}

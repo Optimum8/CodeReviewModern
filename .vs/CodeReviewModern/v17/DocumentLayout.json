@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Steven\\projects\\CodeReview2\\CodeReviewModern\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0D9879-C9C3-4FFB-A31C-4FD2B9AA196D}|CodeReviewModern.csproj|d:\\steven\\projects\\codereview2\\codereviewmodern\\models\\reviewcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE0D9879-C9C3-4FFB-A31C-4FD2B9AA196D}|CodeReviewModern.csproj|solutionrelative:models\\reviewcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0D9879-C9C3-4FFB-A31C-4FD2B9AA196D}|CodeReviewModern.csproj|d:\\steven\\projects\\codereview2\\codereviewmodern\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE0D9879-C9C3-4FFB-A31C-4FD2B9AA196D}|CodeReviewModern.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0D9879-C9C3-4FFB-A31C-4FD2B9AA196D}|CodeReviewModern.csproj|d:\\steven\\projects\\codereview2\\codereviewmodern\\pages\\_chatmessages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE0D9879-C9C3-4FFB-A31C-4FD2B9AA196D}|CodeReviewModern.csproj|solutionrelative:pages\\_chatmessages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0D9879-C9C3-4FFB-A31C-4FD2B9AA196D}|CodeReviewModern.csproj|d:\\steven\\projects\\codereview2\\codereviewmodern\\areas\\identity\\pages\\account\\manage\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE0D9879-C9C3-4FFB-A31C-4FD2B9AA196D}|CodeReviewModern.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0D9879-C9C3-4FFB-A31C-4FD2B9AA196D}|CodeReviewModern.csproj|d:\\steven\\projects\\codereview2\\codereviewmodern\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE0D9879-C9C3-4FFB-A31C-4FD2B9AA196D}|CodeReviewModern.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0D9879-C9C3-4FFB-A31C-4FD2B9AA196D}|CodeReviewModern.csproj|d:\\steven\\projects\\codereview2\\codereviewmodern\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE0D9879-C9C3-4FFB-A31C-4FD2B9AA196D}|CodeReviewModern.csproj|solutionrelative:pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0D9879-C9C3-4FFB-A31C-4FD2B9AA196D}|CodeReviewModern.csproj|d:\\steven\\projects\\codereview2\\codereviewmodern\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BE0D9879-C9C3-4FFB-A31C-4FD2B9AA196D}|CodeReviewModern.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE0D9879-C9C3-4FFB-A31C-4FD2B9AA196D}|CodeReviewModern.csproj|d:\\steven\\projects\\codereview2\\codereviewmodern\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE0D9879-C9C3-4FFB-A31C-4FD2B9AA196D}|CodeReviewModern.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 222,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Steven\\projects\\CodeReview2\\CodeReviewModern\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Steven\\projects\\CodeReview2\\CodeReviewModern\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAwwCUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-18T15:47:51.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "D:\\Steven\\projects\\CodeReview2\\CodeReviewModern\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
+              "ToolTip": "D:\\Steven\\projects\\CodeReview2\\CodeReviewModern\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-18T15:43:22.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ChatMessages.cshtml",
+              "DocumentMoniker": "D:\\Steven\\projects\\CodeReview2\\CodeReviewModern\\Pages\\_ChatMessages.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_ChatMessages.cshtml",
+              "ToolTip": "D:\\Steven\\projects\\CodeReview2\\CodeReviewModern\\Pages\\_ChatMessages.cshtml",
+              "RelativeToolTip": "Pages\\_ChatMessages.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T16:40:13.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\Steven\\projects\\CodeReview2\\CodeReviewModern\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml.cs",
+              "ToolTip": "D:\\Steven\\projects\\CodeReview2\\CodeReviewModern\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T16:22:29.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Steven\\projects\\CodeReview2\\CodeReviewModern\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "D:\\Steven\\projects\\CodeReview2\\CodeReviewModern\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAYwH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-17T16:22:24.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Steven\\projects\\CodeReview2\\CodeReviewModern\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Steven\\projects\\CodeReview2\\CodeReviewModern\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-17T16:14:05.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReviewComment.cs",
+              "DocumentMoniker": "D:\\Steven\\projects\\CodeReview2\\CodeReviewModern\\Models\\ReviewComment.cs",
+              "RelativeDocumentMoniker": "Models\\ReviewComment.cs",
+              "ToolTip": "D:\\Steven\\projects\\CodeReview2\\CodeReviewModern\\Models\\ReviewComment.cs",
+              "RelativeToolTip": "Models\\ReviewComment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T16:11:18.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\Steven\\projects\\CodeReview2\\CodeReviewModern\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
+              "ToolTip": "D:\\Steven\\projects\\CodeReview2\\CodeReviewModern\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T16:11:05.987Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
